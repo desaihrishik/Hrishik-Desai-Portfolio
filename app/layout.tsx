@@ -23,9 +23,14 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Hrishik B. Desai | AI/ML Engineer & Data Scientist",
+  title: "hrishik.",
   description:
     "Portfolio of Hrishik B. Desai, an NYU Computer Engineering master's student focused on AI/ML, data science, analytics, and scalable intelligent systems.",
+  icons: {
+    icon: "/hrishik-profile.png",
+    shortcut: "/hrishik-profile.png",
+    apple: "/hrishik-profile.png",
+  },
 }
 
 export default function RootLayout({
