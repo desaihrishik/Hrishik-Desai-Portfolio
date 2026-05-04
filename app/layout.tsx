@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { DM_Mono, DM_Sans, Newsreader } from "next/font/google"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
 const newsreader = Newsreader({
@@ -44,7 +45,10 @@ export default function RootLayout({
       className={`${newsreader.variable} ${dmSans.variable} ${dmMono.variable}`}
       suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
