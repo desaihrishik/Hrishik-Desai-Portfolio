@@ -73,6 +73,8 @@ const projects = [
     longDescription:
       "Processed and indexed over 250K+ restaurant records to enable efficient retrieval and ranking. LLM-driven agents interpret natural language queries and generate personalized recommendations, improving relevance by ~80% while maintaining sub-10 second response times. The system integrates embedding-based retrieval with optimized data pipelines to ensure scalability, low latency, and consistent performance across diverse user queries.",
     tags: ["Python", "RAG", "LLM Agents", "MongoDB", "AWS"],
+    liveUrl: "https://dinenyc.vercel.app/",
+    codeUrl: "https://github.com/desaihrishik/DineNYC",
   },
   {
     number: "P.04",
