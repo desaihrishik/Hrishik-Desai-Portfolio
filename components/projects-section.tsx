@@ -19,8 +19,8 @@ const projects = [
     ],
     image: "/restaurant-recommendation-app-interface.jpg",
     metrics: ["<15s Latency", "~80% Relevance", "250k+ Records"],
-    demoLink: "https://dinenyc-desaihrishiks-projects.vercel.app/",
-    githubLink: null,
+    demoLink: "https://dinenyc.vercel.app/",
+    githubLink: "https://github.com/desaihrishik/DineNYC",
   },
   {
     title: "GoSafe — Crime Risk Prediction Platform",
