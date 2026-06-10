@@ -96,6 +96,39 @@ const projects = [
       "Designed and developed a 6-DOF robotic arm capable of autonomously classifying and segregating objects using computer vision. Deployed YOLOv8 on a Raspberry Pi for real-time object detection and integrated it with an ARM Cortex-M051 microcontroller to control arm movement and actuation. Built communication between vision and control layers to enable synchronized detection and response. Proposed a custom microcontroller circuit design to improve system efficiency and robustness. Achieved reliable object classification and precise arm movement, demonstrating scalable industrial applications such as automated sorting, quality inspection, and assembly line robotics.",
     tags: ["Python", "OpenCV", "YOLO", "Raspberry Pi", "Embedded Systems", "ARM Microcontroller", "Computer Vision"],
   },
+  {
+    number: "P.06",
+    title: "RoBERTa AG News Classification using LoRA",
+    subtitle: "Parameter-Efficient Transformer Fine-Tuning for News Topic Classification",
+    description:
+      "A parameter-efficient NLP classification workflow that fine-tunes roberta-base with LoRA adapters for 4-class AG News topic prediction using under 1M trainable parameters.",
+    longDescription:
+      "Built an end-to-end sequence classification pipeline for AG News using Hugging Face Datasets, RoBERTa tokenization, PEFT-based LoRA adapters, and transformer fine-tuning. The workflow freezes the base RoBERTa model and trains lightweight adapters with about 870K trainable parameters, covering preprocessing, training, evaluation, inference on unlabeled data, and final prediction export. Multiple trained runs are ensembled by averaging outputs, reaching approximately 94.2% evaluation accuracy while keeping the fine-tuning footprint compact.",
+    tags: ["Python", "RoBERTa", "LoRA", "PEFT", "Transformers", "Hugging Face", "NLP"],
+    codeUrl: "https://github.com/desaihrishik/RoBERTa-AGNews-Classification-using-LoRA",
+  },
+  {
+    number: "P.07",
+    title: "ResNet18 CIFAR-10 Benchmark",
+    subtitle: "Computer Vision Training Performance and Optimization Study",
+    description:
+      "A PyTorch benchmarking suite for CIFAR-10 classification that compares optimizer behavior, CPU/GPU execution, DataLoader throughput, and profiling traces.",
+    longDescription:
+      "Developed repeatable ResNet-18 style training experiments for CIFAR-10 to analyze how systems-level choices affect training speed, convergence, and resource utilization. The project compares SGD and Adam optimizers, CPU versus CUDA execution, DataLoader worker counts, batch normalization behavior, and PyTorch Profiler traces through a single CLI runner. The work focuses on practical AI performance engineering by connecting architecture size, input pipeline efficiency, hardware acceleration, and runtime bottlenecks.",
+    tags: ["Python", "PyTorch", "CIFAR-10", "ResNet-18", "CUDA", "Profiling", "Benchmarking"],
+    codeUrl: "https://github.com/desaihrishik/ResNet18-CIFAR10-Benchmark",
+  },
+  {
+    number: "P.08",
+    title: "ResNet18 CIFAR-10 Classification",
+    subtitle: "Compact CNN Image Classifier with 4.3M Parameters",
+    description:
+      "A compact ResNet-18 style image classification model trained from scratch on CIFAR-10, reaching 93.74% validation accuracy under a small parameter budget.",
+    longDescription:
+      "Implemented a ResNet-18 style convolutional classifier for CIFAR-10 with a focus on strong performance under a compact model footprint. The notebook-based workflow includes dataset preparation, data augmentation, training from scratch, metric logging, prediction export, and training-curve visualization. Saved outputs report 98.81% training accuracy, 93.74% validation accuracy, and 0.2471 validation loss, demonstrating an efficient baseline for 10-class image recognition on 32x32 RGB images.",
+    tags: ["Python", "PyTorch", "ResNet-18", "CIFAR-10", "Computer Vision", "Data Augmentation", "Model Training"],
+    codeUrl: "https://github.com/desaihrishik/ResNet18-CIFAR10-Classification-4.3M-Params",
+  },
 ]
 
 const coreSkills = [
